@@ -1,7 +1,7 @@
 # Food Waste or Trash Image Classification
 trash or food waste? with Tensorflow
 
-# Prerequisites:
+# Prerequisites: 
 > - Tensorflow installed
 > - Python 3.6.x 
 ```
@@ -11,19 +11,23 @@ $ export PYTHONPATH="/usr/local/Cellar/python/3.6.6/bin/python3:$PYTHONPATH”
 
 # Steps:
 1. Base on the steps using Tensorflow for Poets on Codelab, you should be able to install Tensorflow
-2. Activate your virtual environment and get started on the tutorial!
+2. Activate your virtual environment and get started on the [tutorial](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/)
 
 ```
 $ source ./venv/bin/activate
 ```
 
-3. Train your model!
+3. Add your image folder (e.g food_waste) containing two folders (trash and food waste/food) into tf_files. 
+> tf_files/food_waste/food
+> tf_files/food_waste/trash
+
+4. Train your model!
 ```
-python retrain.py --model_dir ./inception --image_dir ~/flowers --output_graph ./output --how_many_training_steps 500
+python retrain.py --model_dir ./inception --image_dir ~/food_waste --output_graph ./output --how_many_training_steps 500
 
 ```
 
-4. Test your model!
+5. Test your model!
 
 ```
 python -m scripts.retrain \
