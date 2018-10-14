@@ -18,8 +18,8 @@ $ source ./venv/bin/activate
 ```
 
 3. Add your image folder (e.g food_waste) containing two folders (trash and food waste/food) into tf_files. 
-> tf_files/food_waste/food
-> tf_files/food_waste/trash
+- tf_files/food_waste/food
+- tf_files/food_waste/trash
 
 4. Train your model with 4000 steps instead of 500!
 ```
@@ -43,5 +43,5 @@ $ python -m scripts.retrain \
 
 # Outcome example
 
-> Trash (0.98249)
-> Food (0.01751)
+- Trash (0.98249)
+- Food (0.01751)
