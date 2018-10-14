@@ -41,7 +41,7 @@ $ python -m scripts.retrain \
 ```
 
 
-# OUTCOME EXAMPLE
+# Outcome example
 
 > Trash (0.98249)
 > Food (0.01751)
