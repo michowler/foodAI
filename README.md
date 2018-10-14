@@ -21,13 +21,13 @@ $ source ./venv/bin/activate
 > tf_files/food_waste/food
 > tf_files/food_waste/trash
 
-4. Train your model!
+4. Train your model with 4000 steps instead of 500!
 ```
-$ python retrain.py --model_dir ./inception --image_dir ~/food_waste --output_graph ./output --how_many_training_steps 500
+$ python retrain.py --model_dir ./inception --image_dir ~/food_waste --output_graph ./output --how_many_training_steps 4000
 
 ```
 
-5. Test your model!
+5. Test your model with an image you'd like by altering the last line, image_dir to the path of your image!
 
 ```
 $ python -m scripts.retrain \
@@ -41,3 +41,7 @@ $ python -m scripts.retrain \
 ```
 
 
+# OUTCOME EXAMPLE
+
+> Trash (0.98249)
+> Food (0.01751)
