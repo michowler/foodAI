@@ -23,14 +23,14 @@ $ source ./venv/bin/activate
 
 4. Train your model!
 ```
-python retrain.py --model_dir ./inception --image_dir ~/food_waste --output_graph ./output --how_many_training_steps 500
+$ python retrain.py --model_dir ./inception --image_dir ~/food_waste --output_graph ./output --how_many_training_steps 500
 
 ```
 
 5. Test your model!
 
 ```
-python -m scripts.retrain \
+$ python -m scripts.retrain \
   --bottleneck_dir=tf_files/bottlenecks \
   --model_dir=tf_files/models/ \
   --summaries_dir=tf_files/training_summaries/"${ARCHITECTURE}" \
